@@ -19,22 +19,26 @@
 	position: fixed;
 	margin: 0 auto;
 	top: 0px;
-	left: 0px;
+
 }
 
 .logo {
-	margin: 2em 0 0 3em
+	float: left;
+	margin: 0 0 0 3em
 }
 
 .banner {
+	float: right;
 	margin-right: 80px;
 	top: 0px;
-	left: 750px;
 }
 
 .confetti {
-	/*position: absolute;*/
+	position: relative;
+	top: 40px;
+	left: 0px;
 }
+
 
 h1 {
 	font-family: helvetica;
@@ -64,14 +68,13 @@ h1 {
 	position: relative;
 	height: 300px;
 	margin: 0 auto;
-	background-color: #696969;
+	background-color: #585858 ;
 	clear: both;
 }
 
 .caption {
 	position: relative;
-	padding-left: 70px;
-	/*padding-right: 10px;*/
+	padding-left: 60px;
 }
 
 .quote2 {
@@ -83,6 +86,18 @@ h1 {
 	float: right;
 	margin-right: 20px;	
 }
+
+.name {
+	font-family: helvetica;
+	font-size: 18px;
+	font-style: bold;
+}
+
+.job {
+	font-family: helvetica;
+	font-size: 18px;
+	color: #707070 ;
+}	
 
 .headline {
 	position: absolute; 
@@ -98,6 +113,10 @@ h1 {
 	padding: 0 10em 1em 0;
 }
 
+.listheading {
+	color: #909090 ;
+}
+
 ul {
 	font-family: helvetica;
 	font-size: 14px;
@@ -105,13 +124,7 @@ ul {
 	line-height: 200%;
 	list-style-type: none;
 	float: left;
-	margin-right: 80px
-}
-
-.gray-box {
-	background-color: #484848;
-	height: 50px;
-
+	margin-right: 80px;
 }
 
 </style>
@@ -121,16 +134,19 @@ ul {
 
 <div class="navbox">
 	<div class="container">
-		<img src="images/logo.jpg">
-		TOUR
-		PRICING
-		SIGNIN
+		<div class="logo">
+			<img src="images/logo.jpg">
+		</div>
+		<span class="navbuttons">
+			TOUR PRICING SIGNIN</span>
 		<img src="images/banner.png">
 	</div>
 </div>
 
 <div class="container">
-	<img class="confetti" src="images/confetti.jpg">
+	<div class="confetti">
+		<img src="images/confetti.jpg">
+	<div>
 
 	<div class="headline">
 		<img src="images/headline.png">
@@ -142,8 +158,8 @@ ul {
 		Enter at your peril, past the vaulted door. Impossible things will happen that the world's never seen before. In Dexter's laboratory lives the smartest boy you've ever seen.</br>
 		<div class="caption">	
 			<img src="images/dexter.jpg">
-			<span class="name">Dexter</span><br>
-			Young Boy Genius</br> 
+			<span class="name"><b>Dexter</span></b><br>
+			<span class="job">Young Boy Genius</span>
 		</div>
 	</div>
 
@@ -151,8 +167,8 @@ ul {
 		Don't go to bed, with no price on your head. No, no, don't do it. Fon't do the crime, if you can't do the time, yeah, don't do it. And keep your eye on the sparrow.</br>
 		<div class="caption">
 			<img src="images/baretta.jpg">
-			Baretta</br>
-			New Jersey police officer<br>
+			<span class="name"><b>Baretta</b></span><br>
+			<span class="job">New Jersey police officer</span>
 		</div>
 	</div>
 </div>
@@ -161,7 +177,7 @@ ul {
 
 	<div class="container">	
 		<ul>
-			<li>PRODUCT</li>
+			<span class="listheading">PRODUCT</span>
 			<li>Tour</li>
 			<li>Pricing</li>
 			<li>Security</li>
@@ -170,7 +186,7 @@ ul {
 		</ul>
 
 		<ul>
-			<li>USERS</li>
+			<li><span class="listheading">USERS</span>
 			<li>Sign In</li>
 			<li>Support</li>
 			<li>FAQs</li>
@@ -178,7 +194,7 @@ ul {
 		</ul>
 
 		<ul>
-			<li>COMPANY</li>
+			<li><span class="listheading">COMPANY</span>
 			<li>About Us</li>
 			<li>Blog</li>
 			<li>Contact</li>
@@ -186,7 +202,7 @@ ul {
 		</ul>
 
 		<ul>
-			<li>FOLLOW</li>
+			<li><span class="listheading">FOLLOW</span>
 			<li>Facebook</li>
 			<li>Twitter</li>
 			<li>LinkedIn</li>

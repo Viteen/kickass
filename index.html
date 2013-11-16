@@ -1,143 +1,26 @@
 <html>
 <head>
 <title>Kickass</title>
-<style>
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="styles.css">
 
-* {
-	border: 1px solid pink;
-}
-
-.container {
-	position: relative;
-	width: 892px;
-	margin: 0 auto;
-}
-
-.navbox {
-	height: 50px;
-	background-color: #fff;
-	position: fixed;
-	width: 892;
-	top: 0px;
-	z-index: 10;
-	overflow: auto;
-}
-
-.logo {
-	float: left;
-	margin: 5px 0 0 20px;
-}
-
-.confetti {
-	position: relative;
-	top: 40px;
-	left: 0px;
-}
-
-h1 {
-	font-family: helvetica;
-	font-size: 32px;
-	text-align: center;
-	padding: 1em;
-}
-
-.quote1 {
-	font-family: georgia;
-	font-size: 23px;
-	font-style: italic;
-	line-height: 140%;
-	width: 370px;
-	float: left;
-	margin: 0em 1em 1em 3em
-}
-
-.caption img {
-	position: absolute;
-	border-radius: 50%;
-	top: 0;
-	left: 0;
-}
-
-footer {
-	background-color: #585858 ;
-	overflow: auto;
-	clear: both;
-}
-
-.caption {
-	position: relative;
-	padding-left: 60px;
-}
-
-.quote2 {
-	font-family: georgia;
-	font-size: 23px;
-	font-style: italic;
-	line-height: 140%;
-	width: 370px;
-	float: right;
-	margin-right: 20px;	
-}
-
-.name {
-	font-family: helvetica;
-	font-size: 18px;
-	font-style: bold;
-}
-
-.job {
-	font-family: helvetica;
-	font-size: 18px;
-	color: #707070 ;
-}	
-
-.headline {
-	position: absolute; 
-	top: 200px;
-	left: 80px;
-}
-
-.navbuttons {
-	position: relative;
-	font-family: helvetica;
-	font-weight: bold;
-	float: right;
-	margin-top: 10px;
-	word-spacing: 20px;
-	padding: 0 5em 1em 15em;
-}
-
-.listheading {
-	color: #909090 ;
-}
-
-ul {
-	font-family: helvetica;
-	font-size: 14px;
-	color: A8A8A8;
-	line-height: 200%;
-	list-style-type: none;
-	float: left;
-	padding: 0 1em 0 4em;
-	margin-right: 30px;
-}
-
-</style>
 </head>
 
 <body>
 
-<div class="container">
+<section>
 	<div class="navbox">
 		<div class="logo">
-			<img src="images/logo.jpg">
+			<img src="images/logo.png">
 		</div>
-			<span class="navbuttons">
-			TOUR PRICING SIGNIN</span>
-	</div>
-</div>
+		<ul class="navbuttons">
+			<li>TOUR</li> 
+			<li>PRICING</li> 
+			<li>SIGN IN</li>
+		</ul>
+</section>
 
-<div class="container">
+<section>
 	<div class="confetti">
 		<img src="images/confetti.jpg">
 	<div>
@@ -146,10 +29,10 @@ ul {
 		<img src="images/headline.png">
 	</div>
 
-	<h1>What people are saying...</h1>
+	<h2>What people are saying...</h2>
 
-	<div class="quote1">
-		Enter at your peril, past the vaulted door. Impossible things will happen that the world's never seen before. In Dexter's laboratory lives the smartest boy you've ever seen.</br>
+	<div class="quote quote1">
+		Enter at your peril, past the vaulted door. Impossible things will happen that the world's never seen before. In Dexter's laboratory lives the smartest boy ever.</br>
 		<div class="caption">	
 			<img src="images/dexter.jpg">
 			<span class="name"><b>Dexter</span></b><br>
@@ -157,7 +40,7 @@ ul {
 		</div>
 	</div>
 
-	<div class="quote2">
+	<div class="quote quote2">
 		Don't go to bed, with no price on your head. No, no, don't do it. Fon't do the crime, if you can't do the time, yeah, don't do it. And keep your eye on the sparrow.</br>
 		<div class="caption">
 			<img src="images/baretta.jpg">
@@ -165,12 +48,12 @@ ul {
 			<span class="job">New Jersey police officer</span>
 		</div>
 	</div>
-</div>
+</section>
 
 
-<footer class="container">
+<footer>
 
-		<ul>
+		<ul class="footer-info">
 			<span class="listheading">PRODUCT</span>
 			<li>Tour</li>
 			<li>Pricing</li>
@@ -179,7 +62,7 @@ ul {
 			<li>Terms</li>
 		</ul>
 
-		<ul>
+		<ul class="footer-info">
 			<li><span class="listheading">USERS</span>
 			<li>Sign In</li>
 			<li>Support</li>
@@ -187,7 +70,7 @@ ul {
 			<li>Stories</li>
 		</ul>
 
-		<ul>
+		<ul class="footer-info">
 			<li><span class="listheading">COMPANY</span>
 			<li>About Us</li>
 			<li>Blog</li>
@@ -195,7 +78,7 @@ ul {
 			<li>Press</li>
 		</ul>
 
-		<ul>
+		<ul class="footer-info">
 			<li><span class="listheading">FOLLOW</span>
 			<li>Facebook</li>
 			<li>Twitter</li>

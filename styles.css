@@ -1,0 +1,125 @@
+/** {
+	border: 1px dashed pink;
+}*/
+section {
+  position: relative;
+  width: 892px;
+  margin: 0 auto;
+}
+
+.navbox {
+  height: 50px;
+  background-color: #33CC99;
+  position: fixed;
+  width: 892;
+  top: 0px;
+  z-index: 10;
+  overflow: auto;
+}
+
+.logo {
+  display: inline-block;
+  margin: 10px 0 0 15px;
+}
+
+.navbuttons {
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+  word-spacing: .5em;
+}
+.navbuttons li {
+  display: inline-block;
+  font-family: helvetica, sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+.confetti {
+  position: relative;
+  top: 40px;
+  left: 0px;
+}
+
+h2 {
+  font-family: helvetica, sans-serif;
+  font-size: 32px;
+  text-align: center;
+  padding: 1em;
+}
+
+.quote {
+  font-family: georgia;
+  font-size: 23px;
+  font-style: italic;
+  line-height: 140%;
+  width: 370px;
+}
+
+.quote1 {
+  float: left;
+  margin: 0em 1em 1em 3em;
+  border: 6px solid black;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.quote2 {
+  float: right;
+  margin-right: 20px;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+footer {
+  background-color: #585858;
+  overflow: auto;
+  clear: both;
+}
+
+.caption {
+  position: relative;
+  padding-left: 60px;
+}
+.caption img {
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+
+.name {
+  font-family: helvetica, sans-serif;
+  font-size: 18px;
+  font-style: bold;
+}
+
+.job {
+  font-family: helvetica, sans-serif;
+  font-size: 18px;
+  color: #707070;
+}
+
+.headline {
+  position: absolute;
+  top: 200px;
+  left: 80px;
+}
+
+.listheading {
+  color: #909090;
+}
+
+.footer-info {
+  font-family: helvetica, sans-serif;
+  font-size: 14px;
+  color: A8A8A8;
+  line-height: 200%;
+  list-style-type: none;
+  float: left;
+  width: 40px;
+  padding: 0 1em 0 4em;
+  margin-right: 20px;
+  margin-left: 60px;
+}
